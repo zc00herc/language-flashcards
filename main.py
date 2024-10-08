@@ -20,13 +20,10 @@ def flip_card():
     canvas.itemconfig(card_word,fill="white",text=current_card[TRANSLATED_LANGUAGE])
 
 def remove_item():
-    global to_learn, words_to_learn
-    words_to_learn = [word for word in to_learn if word != current_card]
-    to_learn = words_to_learn
-    new_df = pd.DataFrame(words_to_learn)
-    new_df.to_csv("./data/words_to_learn.csv",index=False)
+    to_learn.remove(current_card)
     next_card()
-
+    new_df = pd.DataFrame(to_learn)
+    new_df.to_csv("./data/words_to_learn.csv",index=False)
 
 # Constants
 BACKGROUND_COLOR = "#B1DDC6"
