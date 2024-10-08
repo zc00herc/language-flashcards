@@ -56,9 +56,7 @@ card_back_img = PhotoImage(file="./images/card_back.png")
 # Add Canvas Objects
 card_side = canvas.create_image(400,263,image=card_front_img)
 card_title = canvas.create_text(400,150,text="",font=("Ariel",40,"italic"))
-# canvas.create_text(400,150,text=TRANSLATED_LANGUAGE,font=("Ariel",40,"italic"))
 card_word = canvas.create_text(400,263,text="",font=("Ariel",60,"bold"))
-# translated_word = canvas.create_text(400,263,text=starting_translation,font=("Ariel",60,"bold"))
 canvas.grid(column=0,row=0,columnspan=2)
 
 # Create Buttons
