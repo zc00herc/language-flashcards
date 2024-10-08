@@ -30,7 +30,6 @@ BACKGROUND_COLOR = "#B1DDC6"
 LANGUAGE_TO_LEARN = "Spanish"
 TRANSLATED_LANGUAGE = "English"
 current_card = {}
-words_to_learn = []
 
 # Open and read words file and create dictionary with each record a nested dictionary
 try:
